@@ -1,0 +1,1253 @@
+<html>
+<head>
+<title>index.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bababa;}
+.s3 { color: #6aab73;}
+.s4 { color: #2aacb8;}
+.s5 { color: #56a8f5;}
+.s6 { color: #7a7e85;}
+.s7 { color: #cf8e6d;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+index.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s0">&gt;</span>
+
+<span class="s0">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;ar&quot; </span><span class="s2">dir</span><span class="s3">=&quot;rtl&quot;</span><span class="s0">&gt;</span>
+
+<span class="s0">&lt;head&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">name</span><span class="s3">=&quot;viewport&quot; </span><span class="s2">content</span><span class="s3">=&quot;width=device-width, initial-scale=1.0&quot;</span><span class="s0">&gt;</span>
+
+<span class="s1">```</span>
+<span class="s0">&lt;title&gt;</span><span class="s1">نادي الروبوتيك | Robotics Club</span><span class="s0">&lt;/title&gt;</span>
+
+<span class="s0">&lt;style&gt;</span>
+    <span class="s0">* </span><span class="s1">{</span>
+        <span class="s2">margin</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+        <span class="s2">padding</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+        <span class="s2">box-sizing</span><span class="s1">: </span><span class="s3">border-box</span><span class="s1">;</span>
+        <span class="s2">font-family</span><span class="s1">: </span><span class="s3">Arial</span><span class="s1">, </span><span class="s3">sans-serif</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">html </span><span class="s1">{</span>
+        <span class="s2">scroll-behavior</span><span class="s1">: </span><span class="s3">smooth</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">body </span><span class="s1">{</span>
+        <span class="s2">min-height</span><span class="s1">: </span><span class="s4">100</span><span class="s3">vh</span><span class="s1">;</span>
+        <span class="s2">background</span><span class="s1">: </span><span class="s5">#030712</span><span class="s1">;</span>
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#fff</span><span class="s1">;</span>
+        <span class="s2">overflow-x</span><span class="s1">: </span><span class="s3">hidden</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* ================= BACKGROUND ================= */</span>
+
+    <span class="s0">body</span><span class="s1">::</span><span class="s0">before </span><span class="s1">{</span>
+        <span class="s2">content</span><span class="s1">: </span><span class="s3">&quot;&quot;</span><span class="s1">;</span>
+        <span class="s2">position</span><span class="s1">: </span><span class="s3">fixed</span><span class="s1">;</span>
+        <span class="s2">width</span><span class="s1">: </span><span class="s4">600</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">height</span><span class="s1">: </span><span class="s4">600</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">top</span><span class="s1">: -</span><span class="s4">220</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">right</span><span class="s1">: -</span><span class="s4">150</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">background</span><span class="s1">: </span><span class="s5">#00e5ff</span><span class="s1">;</span>
+        <span class="s2">opacity</span><span class="s1">: </span><span class="s4">.12</span><span class="s1">;</span>
+        <span class="s2">filter</span><span class="s1">: </span><span class="s0">blur</span><span class="s1">(</span><span class="s4">130</span><span class="s3">px</span><span class="s1">);</span>
+        <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+        <span class="s2">z-index</span><span class="s1">: -</span><span class="s4">2</span><span class="s1">;</span>
+        <span class="s2">animation</span><span class="s1">: </span><span class="s3">glow </span><span class="s4">7</span><span class="s3">s ease-in-out infinite alternate</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">body</span><span class="s1">::</span><span class="s0">after </span><span class="s1">{</span>
+        <span class="s2">content</span><span class="s1">: </span><span class="s3">&quot;&quot;</span><span class="s1">;</span>
+        <span class="s2">position</span><span class="s1">: </span><span class="s3">fixed</span><span class="s1">;</span>
+        <span class="s2">width</span><span class="s1">: </span><span class="s4">600</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">height</span><span class="s1">: </span><span class="s4">600</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">bottom</span><span class="s1">: -</span><span class="s4">250</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">left</span><span class="s1">: -</span><span class="s4">150</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">background</span><span class="s1">: </span><span class="s5">#7c3aed</span><span class="s1">;</span>
+        <span class="s2">opacity</span><span class="s1">: </span><span class="s4">.13</span><span class="s1">;</span>
+        <span class="s2">filter</span><span class="s1">: </span><span class="s0">blur</span><span class="s1">(</span><span class="s4">140</span><span class="s3">px</span><span class="s1">);</span>
+        <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+        <span class="s2">z-index</span><span class="s1">: -</span><span class="s4">2</span><span class="s1">;</span>
+        <span class="s2">animation</span><span class="s1">: </span><span class="s3">glow </span><span class="s4">9</span><span class="s3">s ease-in-out infinite alternate-reverse</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s7">@keyframes </span><span class="s0">glow </span><span class="s1">{</span>
+        <span class="s0">from </span><span class="s1">{</span>
+            <span class="s2">transform</span><span class="s1">: </span><span class="s0">translate</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">0</span><span class="s1">) </span><span class="s0">scale</span><span class="s1">(</span><span class="s4">1</span><span class="s1">);</span>
+        <span class="s1">}</span>
+
+        <span class="s0">to </span><span class="s1">{</span>
+            <span class="s2">transform</span><span class="s1">: </span><span class="s0">translate</span><span class="s1">(</span><span class="s4">40</span><span class="s3">px</span><span class="s1">, </span><span class="s4">30</span><span class="s3">px</span><span class="s1">) </span><span class="s0">scale</span><span class="s1">(</span><span class="s4">1.15</span><span class="s1">);</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* شبكة تقنية */</span>
+
+    <span class="s1">.</span><span class="s0">grid-bg </span><span class="s1">{</span>
+        <span class="s2">position</span><span class="s1">: </span><span class="s3">fixed</span><span class="s1">;</span>
+        <span class="s2">inset</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+        <span class="s2">pointer-events</span><span class="s1">: </span><span class="s3">none</span><span class="s1">;</span>
+        <span class="s2">z-index</span><span class="s1">: -</span><span class="s4">1</span><span class="s1">;</span>
+        <span class="s2">opacity</span><span class="s1">: </span><span class="s4">.18</span><span class="s1">;</span>
+        <span class="s2">background-image</span><span class="s1">:</span>
+            <span class="s0">linear-gradient</span><span class="s1">(</span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">229</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.08</span><span class="s1">) </span><span class="s4">1</span><span class="s3">px</span><span class="s1">, </span><span class="s3">transparent </span><span class="s4">1</span><span class="s3">px</span><span class="s1">),</span>
+            <span class="s0">linear-gradient</span><span class="s1">(</span><span class="s4">90</span><span class="s3">deg</span><span class="s1">, </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">229</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.08</span><span class="s1">) </span><span class="s4">1</span><span class="s3">px</span><span class="s1">, </span><span class="s3">transparent </span><span class="s4">1</span><span class="s3">px</span><span class="s1">);</span>
+        <span class="s2">background-size</span><span class="s1">: </span><span class="s4">45</span><span class="s3">px </span><span class="s4">45</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">mask-image</span><span class="s1">: </span><span class="s0">linear-gradient</span><span class="s1">(</span><span class="s3">to bottom</span><span class="s1">, </span><span class="s3">black</span><span class="s1">, </span><span class="s3">transparent </span><span class="s4">85</span><span class="s1">%);</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* نقاط مضيئة */</span>
+
+    <span class="s1">.</span><span class="s0">dot </span><span class="s1">{</span>
+        <span class="s2">position</span><span class="s1">: </span><span class="s3">fixed</span><span class="s1">;</span>
+        <span class="s2">width</span><span class="s1">: </span><span class="s4">4</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">height</span><span class="s1">: </span><span class="s4">4</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">background</span><span class="s1">: </span><span class="s5">#00e5ff</span><span class="s1">;</span>
+        <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+        <span class="s2">box-shadow</span><span class="s1">: </span><span class="s4">0 0 15</span><span class="s3">px </span><span class="s5">#00e5ff</span><span class="s1">;</span>
+        <span class="s2">opacity</span><span class="s1">: </span><span class="s4">.7</span><span class="s1">;</span>
+        <span class="s2">z-index</span><span class="s1">: -</span><span class="s4">1</span><span class="s1">;</span>
+        <span class="s2">animation</span><span class="s1">: </span><span class="s3">floatDot </span><span class="s4">6</span><span class="s3">s infinite ease-in-out</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">dot1 </span><span class="s1">{</span>
+        <span class="s2">top</span><span class="s1">: </span><span class="s4">25</span><span class="s1">%;</span>
+        <span class="s2">left</span><span class="s1">: </span><span class="s4">12</span><span class="s1">%;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">dot2 </span><span class="s1">{</span>
+        <span class="s2">top</span><span class="s1">: </span><span class="s4">55</span><span class="s1">%;</span>
+        <span class="s2">left</span><span class="s1">: </span><span class="s4">85</span><span class="s1">%;</span>
+        <span class="s2">animation-delay</span><span class="s1">: </span><span class="s4">2</span><span class="s3">s</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">dot3 </span><span class="s1">{</span>
+        <span class="s2">top</span><span class="s1">: </span><span class="s4">75</span><span class="s1">%;</span>
+        <span class="s2">left</span><span class="s1">: </span><span class="s4">25</span><span class="s1">%;</span>
+        <span class="s2">animation-delay</span><span class="s1">: </span><span class="s4">4</span><span class="s3">s</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">dot4 </span><span class="s1">{</span>
+        <span class="s2">top</span><span class="s1">: </span><span class="s4">15</span><span class="s1">%;</span>
+        <span class="s2">left</span><span class="s1">: </span><span class="s4">70</span><span class="s1">%;</span>
+        <span class="s2">animation-delay</span><span class="s1">: </span><span class="s4">1</span><span class="s3">s</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s7">@keyframes </span><span class="s0">floatDot </span><span class="s1">{</span>
+        <span class="s0">0%</span><span class="s1">, </span><span class="s0">100% </span><span class="s1">{</span>
+            <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(</span><span class="s4">0</span><span class="s1">);</span>
+            <span class="s2">opacity</span><span class="s1">: </span><span class="s4">.3</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s0">50% </span><span class="s1">{</span>
+            <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(-</span><span class="s4">35</span><span class="s3">px</span><span class="s1">);</span>
+            <span class="s2">opacity</span><span class="s1">: </span><span class="s4">1</span><span class="s1">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* ================= NAVBAR ================= */</span>
+
+    <span class="s0">nav </span><span class="s1">{</span>
+        <span class="s2">position</span><span class="s1">: </span><span class="s3">sticky</span><span class="s1">;</span>
+        <span class="s2">top</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+        <span class="s2">z-index</span><span class="s1">: </span><span class="s4">100</span><span class="s1">;</span>
+
+        <span class="s2">width</span><span class="s1">: </span><span class="s4">100</span><span class="s1">%;</span>
+        <span class="s2">padding</span><span class="s1">: </span><span class="s4">18</span><span class="s3">px </span><span class="s4">7</span><span class="s1">%;</span>
+
+        <span class="s2">display</span><span class="s1">: </span><span class="s3">flex</span><span class="s1">;</span>
+        <span class="s2">justify-content</span><span class="s1">: </span><span class="s3">space-between</span><span class="s1">;</span>
+        <span class="s2">align-items</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+
+        <span class="s2">background</span><span class="s1">: </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">3</span><span class="s1">, </span><span class="s4">7</span><span class="s1">, </span><span class="s4">18</span><span class="s1">, </span><span class="s4">.72</span><span class="s1">);</span>
+        <span class="s2">backdrop-filter</span><span class="s1">: </span><span class="s0">blur</span><span class="s1">(</span><span class="s4">18</span><span class="s3">px</span><span class="s1">);</span>
+        <span class="s2">-webkit-backdrop-filter</span><span class="s1">: </span><span class="s0">blur</span><span class="s1">(</span><span class="s4">18</span><span class="s3">px</span><span class="s1">);</span>
+
+        <span class="s2">border-bottom</span><span class="s1">: </span><span class="s4">1</span><span class="s3">px solid </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">255</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.08</span><span class="s1">);</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">logo </span><span class="s1">{</span>
+        <span class="s2">display</span><span class="s1">: </span><span class="s3">flex</span><span class="s1">;</span>
+        <span class="s2">align-items</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+        <span class="s2">gap</span><span class="s1">: </span><span class="s4">9</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">font-size</span><span class="s1">: </span><span class="s4">23</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">font-weight</span><span class="s1">: </span><span class="s3">bold</span><span class="s1">;</span>
+        <span class="s2">letter-spacing</span><span class="s1">: </span><span class="s4">.5</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">logo span </span><span class="s1">{</span>
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#00e5ff</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">robot-icon </span><span class="s1">{</span>
+        <span class="s2">font-size</span><span class="s1">: </span><span class="s4">28</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">animation</span><span class="s1">: </span><span class="s3">robotFloat </span><span class="s4">3</span><span class="s3">s ease-in-out infinite</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s7">@keyframes </span><span class="s0">robotFloat </span><span class="s1">{</span>
+        <span class="s0">0%</span><span class="s1">, </span><span class="s0">100% </span><span class="s1">{</span>
+            <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(</span><span class="s4">0</span><span class="s1">);</span>
+        <span class="s1">}</span>
+
+        <span class="s0">50% </span><span class="s1">{</span>
+            <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(-</span><span class="s4">5</span><span class="s3">px</span><span class="s1">);</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">nav-text </span><span class="s1">{</span>
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#94a3b8</span><span class="s1">;</span>
+        <span class="s2">font-size</span><span class="s1">: </span><span class="s4">14</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* ================= CONTAINER ================= */</span>
+
+    <span class="s1">.</span><span class="s0">container </span><span class="s1">{</span>
+        <span class="s2">width</span><span class="s1">: </span><span class="s4">92</span><span class="s1">%;</span>
+        <span class="s2">max-width</span><span class="s1">: </span><span class="s4">1100</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">margin</span><span class="s1">: </span><span class="s4">55</span><span class="s3">px auto </span><span class="s4">80</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* ================= HERO ================= */</span>
+
+    <span class="s1">.</span><span class="s0">hero </span><span class="s1">{</span>
+        <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+        <span class="s2">margin-bottom</span><span class="s1">: </span><span class="s4">45</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">hero-icon </span><span class="s1">{</span>
+        <span class="s2">width</span><span class="s1">: </span><span class="s4">105</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">height</span><span class="s1">: </span><span class="s4">105</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">margin</span><span class="s1">: </span><span class="s4">0 </span><span class="s3">auto </span><span class="s4">22</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">display</span><span class="s1">: </span><span class="s3">flex</span><span class="s1">;</span>
+        <span class="s2">align-items</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+        <span class="s2">justify-content</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+
+        <span class="s2">font-size</span><span class="s1">: </span><span class="s4">58</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">30</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">background</span><span class="s1">:</span>
+            <span class="s0">linear-gradient</span><span class="s1">(</span>
+                <span class="s4">145</span><span class="s3">deg</span><span class="s1">,</span>
+                <span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">229</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.14</span><span class="s1">),</span>
+                <span class="s0">rgba</span><span class="s1">(</span><span class="s4">124</span><span class="s1">, </span><span class="s4">58</span><span class="s1">, </span><span class="s4">237</span><span class="s1">, </span><span class="s4">.12</span><span class="s1">)</span>
+            <span class="s1">);</span>
+
+        <span class="s2">border</span><span class="s1">: </span><span class="s4">1</span><span class="s3">px solid </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">229</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.2</span><span class="s1">);</span>
+
+        <span class="s2">box-shadow</span><span class="s1">:</span>
+            <span class="s4">0 0 50</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">229</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.12</span><span class="s1">),</span>
+            <span class="s3">inset </span><span class="s4">0 0 30</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">229</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.04</span><span class="s1">);</span>
+
+        <span class="s2">animation</span><span class="s1">: </span><span class="s3">heroFloat </span><span class="s4">4</span><span class="s3">s ease-in-out infinite</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s7">@keyframes </span><span class="s0">heroFloat </span><span class="s1">{</span>
+        <span class="s0">0%</span><span class="s1">, </span><span class="s0">100% </span><span class="s1">{</span>
+            <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(</span><span class="s4">0</span><span class="s1">) </span><span class="s0">rotate</span><span class="s1">(</span><span class="s4">0</span><span class="s3">deg</span><span class="s1">);</span>
+        <span class="s1">}</span>
+
+        <span class="s0">50% </span><span class="s1">{</span>
+            <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(-</span><span class="s4">8</span><span class="s3">px</span><span class="s1">) </span><span class="s0">rotate</span><span class="s1">(</span><span class="s4">2</span><span class="s3">deg</span><span class="s1">);</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">hero h1 </span><span class="s1">{</span>
+        <span class="s2">font-size</span><span class="s1">: </span><span class="s0">clamp</span><span class="s1">(</span><span class="s4">34</span><span class="s3">px</span><span class="s1">, </span><span class="s4">5</span><span class="s3">vw</span><span class="s1">, </span><span class="s4">52</span><span class="s3">px</span><span class="s1">);</span>
+        <span class="s2">line-height</span><span class="s1">: </span><span class="s4">1.3</span><span class="s1">;</span>
+        <span class="s2">margin-bottom</span><span class="s1">: </span><span class="s4">17</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">hero h1 span </span><span class="s1">{</span>
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#00e5ff</span><span class="s1">;</span>
+
+        <span class="s2">text-shadow</span><span class="s1">:</span>
+            <span class="s4">0 0 25</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">229</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.25</span><span class="s1">);</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">hero p </span><span class="s1">{</span>
+        <span class="s2">max-width</span><span class="s1">: </span><span class="s4">700</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">margin</span><span class="s1">: </span><span class="s3">auto</span><span class="s1">;</span>
+
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#94a3b8</span><span class="s1">;</span>
+        <span class="s2">line-height</span><span class="s1">: </span><span class="s4">1.9</span><span class="s1">;</span>
+        <span class="s2">font-size</span><span class="s1">: </span><span class="s4">17</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* ================= BADGE ================= */</span>
+
+    <span class="s1">.</span><span class="s0">badge </span><span class="s1">{</span>
+        <span class="s2">display</span><span class="s1">: </span><span class="s3">inline-flex</span><span class="s1">;</span>
+        <span class="s2">align-items</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+        <span class="s2">gap</span><span class="s1">: </span><span class="s4">8</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">padding</span><span class="s1">: </span><span class="s4">8</span><span class="s3">px </span><span class="s4">15</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">margin-bottom</span><span class="s1">: </span><span class="s4">18</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#67e8f9</span><span class="s1">;</span>
+        <span class="s2">background</span><span class="s1">: </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">229</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.07</span><span class="s1">);</span>
+        <span class="s2">border</span><span class="s1">: </span><span class="s4">1</span><span class="s3">px solid </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">229</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.16</span><span class="s1">);</span>
+
+        <span class="s2">font-size</span><span class="s1">: </span><span class="s4">13</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">badge-dot </span><span class="s1">{</span>
+        <span class="s2">width</span><span class="s1">: </span><span class="s4">7</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">height</span><span class="s1">: </span><span class="s4">7</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">50</span><span class="s1">%;</span>
+        <span class="s2">background</span><span class="s1">: </span><span class="s5">#22d3ee</span><span class="s1">;</span>
+        <span class="s2">box-shadow</span><span class="s1">: </span><span class="s4">0 0 10</span><span class="s3">px </span><span class="s5">#22d3ee</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* ================= FORM CARD ================= */</span>
+
+    <span class="s1">.</span><span class="s0">form-card </span><span class="s1">{</span>
+        <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+
+        <span class="s2">max-width</span><span class="s1">: </span><span class="s4">900</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">margin</span><span class="s1">: </span><span class="s3">auto</span><span class="s1">;</span>
+        <span class="s2">padding</span><span class="s1">: </span><span class="s4">42</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">background</span><span class="s1">:</span>
+            <span class="s0">linear-gradient</span><span class="s1">(</span>
+                <span class="s4">145</span><span class="s3">deg</span><span class="s1">,</span>
+                <span class="s0">rgba</span><span class="s1">(</span><span class="s4">15</span><span class="s1">, </span><span class="s4">23</span><span class="s1">, </span><span class="s4">42</span><span class="s1">, </span><span class="s4">.92</span><span class="s1">),</span>
+                <span class="s0">rgba</span><span class="s1">(</span><span class="s4">8</span><span class="s1">, </span><span class="s4">15</span><span class="s1">, </span><span class="s4">31</span><span class="s1">, </span><span class="s4">.88</span><span class="s1">)</span>
+            <span class="s1">);</span>
+
+        <span class="s2">border</span><span class="s1">: </span><span class="s4">1</span><span class="s3">px solid </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">255</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.09</span><span class="s1">);</span>
+        <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">30</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">box-shadow</span><span class="s1">:</span>
+            <span class="s4">0 35</span><span class="s3">px </span><span class="s4">100</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">0</span><span class="s1">, </span><span class="s4">0</span><span class="s1">, </span><span class="s4">.45</span><span class="s1">),</span>
+            <span class="s3">inset </span><span class="s4">0 1</span><span class="s3">px </span><span class="s4">0 </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">255</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.04</span><span class="s1">);</span>
+
+        <span class="s2">backdrop-filter</span><span class="s1">: </span><span class="s0">blur</span><span class="s1">(</span><span class="s4">20</span><span class="s3">px</span><span class="s1">);</span>
+        <span class="s2">-webkit-backdrop-filter</span><span class="s1">: </span><span class="s0">blur</span><span class="s1">(</span><span class="s4">20</span><span class="s3">px</span><span class="s1">);</span>
+
+        <span class="s2">overflow</span><span class="s1">: </span><span class="s3">hidden</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">form-card</span><span class="s1">::</span><span class="s0">before </span><span class="s1">{</span>
+        <span class="s2">content</span><span class="s1">: </span><span class="s3">&quot;&quot;</span><span class="s1">;</span>
+        <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+
+        <span class="s2">width</span><span class="s1">: </span><span class="s4">250</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">height</span><span class="s1">: </span><span class="s4">2</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">top</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+        <span class="s2">right</span><span class="s1">: </span><span class="s4">80</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">background</span><span class="s1">: </span><span class="s0">linear-gradient</span><span class="s1">(</span>
+            <span class="s4">90</span><span class="s3">deg</span><span class="s1">,</span>
+            <span class="s3">transparent</span><span class="s1">,</span>
+            <span class="s5">#00e5ff</span><span class="s1">,</span>
+            <span class="s3">transparent</span>
+        <span class="s1">);</span>
+
+        <span class="s2">box-shadow</span><span class="s1">: </span><span class="s4">0 0 20</span><span class="s3">px </span><span class="s5">#00e5ff</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">form-title </span><span class="s1">{</span>
+        <span class="s2">margin-bottom</span><span class="s1">: </span><span class="s4">30</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">form-title h2 </span><span class="s1">{</span>
+        <span class="s2">font-size</span><span class="s1">: </span><span class="s4">28</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">margin-bottom</span><span class="s1">: </span><span class="s4">9</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">form-title p </span><span class="s1">{</span>
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#64748b</span><span class="s1">;</span>
+        <span class="s2">line-height</span><span class="s1">: </span><span class="s4">1.7</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* ================= FIELDS ================= */</span>
+
+    <span class="s1">.</span><span class="s0">grid </span><span class="s1">{</span>
+        <span class="s2">display</span><span class="s1">: </span><span class="s3">grid</span><span class="s1">;</span>
+        <span class="s2">grid-template-columns</span><span class="s1">: </span><span class="s4">1</span><span class="s3">fr </span><span class="s4">1</span><span class="s3">fr</span><span class="s1">;</span>
+        <span class="s2">gap</span><span class="s1">: </span><span class="s4">21</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">field </span><span class="s1">{</span>
+        <span class="s2">display</span><span class="s1">: </span><span class="s3">flex</span><span class="s1">;</span>
+        <span class="s2">flex-direction</span><span class="s1">: </span><span class="s3">column</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">field</span><span class="s1">.</span><span class="s0">full </span><span class="s1">{</span>
+        <span class="s2">grid-column</span><span class="s1">: </span><span class="s4">1 </span><span class="s1">/ -</span><span class="s4">1</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">label </span><span class="s1">{</span>
+        <span class="s2">margin-bottom</span><span class="s1">: </span><span class="s4">9</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#cbd5e1</span><span class="s1">;</span>
+        <span class="s2">font-size</span><span class="s1">: </span><span class="s4">15</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">label span </span><span class="s1">{</span>
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#00e5ff</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">input</span><span class="s1">,</span>
+    <span class="s0">select</span><span class="s1">,</span>
+    <span class="s0">textarea </span><span class="s1">{</span>
+        <span class="s2">width</span><span class="s1">: </span><span class="s4">100</span><span class="s1">%;</span>
+        <span class="s2">padding</span><span class="s1">: </span><span class="s4">15</span><span class="s3">px </span><span class="s4">16</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">background</span><span class="s1">: </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">7</span><span class="s1">, </span><span class="s4">15</span><span class="s1">, </span><span class="s4">31</span><span class="s1">, </span><span class="s4">.9</span><span class="s1">);</span>
+
+        <span class="s2">border</span><span class="s1">: </span><span class="s4">1</span><span class="s3">px solid </span><span class="s5">#26344d</span><span class="s1">;</span>
+        <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">13</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#fff</span><span class="s1">;</span>
+        <span class="s2">outline</span><span class="s1">: </span><span class="s3">none</span><span class="s1">;</span>
+
+        <span class="s2">font-size</span><span class="s1">: </span><span class="s4">15</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">transition</span><span class="s1">: </span><span class="s4">.3</span><span class="s3">s ease</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">input</span><span class="s1">::</span><span class="s0">placeholder</span><span class="s1">,</span>
+    <span class="s0">textarea</span><span class="s1">::</span><span class="s0">placeholder </span><span class="s1">{</span>
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#475569</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">input</span><span class="s1">:</span><span class="s0">hover</span><span class="s1">,</span>
+    <span class="s0">select</span><span class="s1">:</span><span class="s0">hover</span><span class="s1">,</span>
+    <span class="s0">textarea</span><span class="s1">:</span><span class="s0">hover </span><span class="s1">{</span>
+        <span class="s2">border-color</span><span class="s1">: </span><span class="s5">#3b4d69</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">input</span><span class="s1">:</span><span class="s0">focus</span><span class="s1">,</span>
+    <span class="s0">select</span><span class="s1">:</span><span class="s0">focus</span><span class="s1">,</span>
+    <span class="s0">textarea</span><span class="s1">:</span><span class="s0">focus </span><span class="s1">{</span>
+        <span class="s2">border-color</span><span class="s1">: </span><span class="s5">#00e5ff</span><span class="s1">;</span>
+
+        <span class="s2">box-shadow</span><span class="s1">:</span>
+            <span class="s4">0 0 0 3</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">229</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.08</span><span class="s1">),</span>
+            <span class="s4">0 0 25</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">229</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.05</span><span class="s1">);</span>
+
+        <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(-</span><span class="s4">1</span><span class="s3">px</span><span class="s1">);</span>
+    <span class="s1">}</span>
+
+    <span class="s0">textarea </span><span class="s1">{</span>
+        <span class="s2">min-height</span><span class="s1">: </span><span class="s4">130</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">resize</span><span class="s1">: </span><span class="s3">vertical</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">select option </span><span class="s1">{</span>
+        <span class="s2">background</span><span class="s1">: </span><span class="s5">#0b1224</span><span class="s1">;</span>
+        <span class="s2">color</span><span class="s1">: </span><span class="s3">white</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* ================= INTERESTS ================= */</span>
+
+    <span class="s1">.</span><span class="s0">interests </span><span class="s1">{</span>
+        <span class="s2">display</span><span class="s1">: </span><span class="s3">grid</span><span class="s1">;</span>
+        <span class="s2">grid-template-columns</span><span class="s1">: </span><span class="s0">repeat</span><span class="s1">(</span><span class="s4">3</span><span class="s1">, </span><span class="s4">1</span><span class="s3">fr</span><span class="s1">);</span>
+        <span class="s2">gap</span><span class="s1">: </span><span class="s4">12</span><span class="s3">px</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">interest </span><span class="s1">{</span>
+        <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">interest input </span><span class="s1">{</span>
+        <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+        <span class="s2">opacity</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+        <span class="s2">pointer-events</span><span class="s1">: </span><span class="s3">none</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">interest label </span><span class="s1">{</span>
+        <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+
+        <span class="s2">padding</span><span class="s1">: </span><span class="s4">16</span><span class="s3">px </span><span class="s4">10</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+
+        <span class="s2">border</span><span class="s1">: </span><span class="s4">1</span><span class="s3">px solid </span><span class="s5">#26344d</span><span class="s1">;</span>
+        <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">13</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">cursor</span><span class="s1">: </span><span class="s3">pointer</span><span class="s1">;</span>
+
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#94a3b8</span><span class="s1">;</span>
+
+        <span class="s2">transition</span><span class="s1">: </span><span class="s4">.25</span><span class="s3">s ease</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">interest label</span><span class="s1">:</span><span class="s0">hover </span><span class="s1">{</span>
+        <span class="s2">color</span><span class="s1">: </span><span class="s3">white</span><span class="s1">;</span>
+        <span class="s2">border-color</span><span class="s1">: </span><span class="s5">#3b4d69</span><span class="s1">;</span>
+        <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(-</span><span class="s4">2</span><span class="s3">px</span><span class="s1">);</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">interest input</span><span class="s1">:</span><span class="s0">checked </span><span class="s1">+ </span><span class="s0">label </span><span class="s1">{</span>
+        <span class="s2">border-color</span><span class="s1">: </span><span class="s5">#00e5ff</span><span class="s1">;</span>
+
+        <span class="s2">background</span><span class="s1">: </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">229</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.08</span><span class="s1">);</span>
+
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#00e5ff</span><span class="s1">;</span>
+
+        <span class="s2">box-shadow</span><span class="s1">:</span>
+            <span class="s4">0 0 20</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">229</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.07</span><span class="s1">);</span>
+
+        <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(-</span><span class="s4">3</span><span class="s3">px</span><span class="s1">);</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* ================= AGREEMENT ================= */</span>
+
+    <span class="s1">.</span><span class="s0">agree </span><span class="s1">{</span>
+        <span class="s2">display</span><span class="s1">: </span><span class="s3">flex</span><span class="s1">;</span>
+        <span class="s2">align-items</span><span class="s1">: </span><span class="s3">flex-start</span><span class="s1">;</span>
+        <span class="s2">gap</span><span class="s1">: </span><span class="s4">10</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">margin-top</span><span class="s1">: </span><span class="s4">25</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#94a3b8</span><span class="s1">;</span>
+        <span class="s2">font-size</span><span class="s1">: </span><span class="s4">14</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">line-height</span><span class="s1">: </span><span class="s4">1.7</span><span class="s1">;</span>
+
+        <span class="s2">cursor</span><span class="s1">: </span><span class="s3">pointer</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">agree input </span><span class="s1">{</span>
+        <span class="s2">width</span><span class="s1">: </span><span class="s4">18</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">height</span><span class="s1">: </span><span class="s4">18</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">margin-top</span><span class="s1">: </span><span class="s4">2</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">accent-color</span><span class="s1">: </span><span class="s5">#00e5ff</span><span class="s1">;</span>
+        <span class="s2">flex-shrink</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* ================= BUTTON ================= */</span>
+
+    <span class="s1">.</span><span class="s0">submit-btn </span><span class="s1">{</span>
+        <span class="s2">position</span><span class="s1">: </span><span class="s3">relative</span><span class="s1">;</span>
+
+        <span class="s2">width</span><span class="s1">: </span><span class="s4">100</span><span class="s1">%;</span>
+
+        <span class="s2">margin-top</span><span class="s1">: </span><span class="s4">25</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">padding</span><span class="s1">: </span><span class="s4">17</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">border</span><span class="s1">: </span><span class="s3">none</span><span class="s1">;</span>
+        <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">14</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">background</span><span class="s1">:</span>
+            <span class="s0">linear-gradient</span><span class="s1">(</span>
+                <span class="s4">135</span><span class="s3">deg</span><span class="s1">,</span>
+                <span class="s5">#00e5ff</span><span class="s1">,</span>
+                <span class="s5">#2563eb</span>
+            <span class="s1">);</span>
+
+        <span class="s2">color</span><span class="s1">: </span><span class="s3">white</span><span class="s1">;</span>
+
+        <span class="s2">font-size</span><span class="s1">: </span><span class="s4">18</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">font-weight</span><span class="s1">: </span><span class="s3">bold</span><span class="s1">;</span>
+
+        <span class="s2">cursor</span><span class="s1">: </span><span class="s3">pointer</span><span class="s1">;</span>
+
+        <span class="s2">transition</span><span class="s1">: </span><span class="s4">.3</span><span class="s3">s ease</span><span class="s1">;</span>
+
+        <span class="s2">box-shadow</span><span class="s1">:</span>
+            <span class="s4">0 12</span><span class="s3">px </span><span class="s4">35</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">229</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.13</span><span class="s1">);</span>
+
+        <span class="s2">overflow</span><span class="s1">: </span><span class="s3">hidden</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">submit-btn</span><span class="s1">::</span><span class="s0">before </span><span class="s1">{</span>
+        <span class="s2">content</span><span class="s1">: </span><span class="s3">&quot;&quot;</span><span class="s1">;</span>
+
+        <span class="s2">position</span><span class="s1">: </span><span class="s3">absolute</span><span class="s1">;</span>
+        <span class="s2">top</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+        <span class="s2">left</span><span class="s1">: -</span><span class="s4">100</span><span class="s1">%;</span>
+
+        <span class="s2">width</span><span class="s1">: </span><span class="s4">60</span><span class="s1">%;</span>
+        <span class="s2">height</span><span class="s1">: </span><span class="s4">100</span><span class="s1">%;</span>
+
+        <span class="s2">background</span><span class="s1">: </span><span class="s0">linear-gradient</span><span class="s1">(</span>
+            <span class="s4">90</span><span class="s3">deg</span><span class="s1">,</span>
+            <span class="s3">transparent</span><span class="s1">,</span>
+            <span class="s0">rgba</span><span class="s1">(</span><span class="s4">255</span><span class="s1">,</span><span class="s4">255</span><span class="s1">,</span><span class="s4">255</span><span class="s1">,</span><span class="s4">.3</span><span class="s1">),</span>
+            <span class="s3">transparent</span>
+        <span class="s1">);</span>
+
+        <span class="s2">transform</span><span class="s1">: </span><span class="s0">skewX</span><span class="s1">(-</span><span class="s4">20</span><span class="s3">deg</span><span class="s1">);</span>
+        <span class="s2">transition</span><span class="s1">: </span><span class="s4">.6</span><span class="s3">s</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">submit-btn</span><span class="s1">:</span><span class="s0">hover</span><span class="s1">::</span><span class="s0">before </span><span class="s1">{</span>
+        <span class="s2">left</span><span class="s1">: </span><span class="s4">140</span><span class="s1">%;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">submit-btn</span><span class="s1">:</span><span class="s0">hover </span><span class="s1">{</span>
+        <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(-</span><span class="s4">3</span><span class="s3">px</span><span class="s1">);</span>
+
+        <span class="s2">box-shadow</span><span class="s1">:</span>
+            <span class="s4">0 17</span><span class="s3">px </span><span class="s4">45</span><span class="s3">px </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">0</span><span class="s1">, </span><span class="s4">229</span><span class="s1">, </span><span class="s4">255</span><span class="s1">, </span><span class="s4">.22</span><span class="s1">);</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">submit-btn</span><span class="s1">:</span><span class="s0">active </span><span class="s1">{</span>
+        <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(</span><span class="s4">0</span><span class="s1">);</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* ================= SUCCESS ================= */</span>
+
+    <span class="s1">.</span><span class="s0">success-message </span><span class="s1">{</span>
+        <span class="s2">display</span><span class="s1">: </span><span class="s3">none</span><span class="s1">;</span>
+
+        <span class="s2">margin-top</span><span class="s1">: </span><span class="s4">20</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s2">padding</span><span class="s1">: </span><span class="s4">18</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">14</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+
+        <span class="s2">background</span><span class="s1">: </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">34</span><span class="s1">, </span><span class="s4">197</span><span class="s1">, </span><span class="s4">94</span><span class="s1">, </span><span class="s4">.08</span><span class="s1">);</span>
+        <span class="s2">border</span><span class="s1">: </span><span class="s4">1</span><span class="s3">px solid </span><span class="s0">rgba</span><span class="s1">(</span><span class="s4">34</span><span class="s1">, </span><span class="s4">197</span><span class="s1">, </span><span class="s4">94</span><span class="s1">, </span><span class="s4">.25</span><span class="s1">);</span>
+
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#86efac</span><span class="s1">;</span>
+
+        <span class="s2">line-height</span><span class="s1">: </span><span class="s4">1.7</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">.</span><span class="s0">success-message</span><span class="s1">.</span><span class="s0">show </span><span class="s1">{</span>
+        <span class="s2">display</span><span class="s1">: </span><span class="s3">block</span><span class="s1">;</span>
+        <span class="s2">animation</span><span class="s1">: </span><span class="s3">successIn </span><span class="s4">.5</span><span class="s3">s ease</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s7">@keyframes </span><span class="s0">successIn </span><span class="s1">{</span>
+        <span class="s0">from </span><span class="s1">{</span>
+            <span class="s2">opacity</span><span class="s1">: </span><span class="s4">0</span><span class="s1">;</span>
+            <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(</span><span class="s4">10</span><span class="s3">px</span><span class="s1">);</span>
+        <span class="s1">}</span>
+
+        <span class="s0">to </span><span class="s1">{</span>
+            <span class="s2">opacity</span><span class="s1">: </span><span class="s4">1</span><span class="s1">;</span>
+            <span class="s2">transform</span><span class="s1">: </span><span class="s0">translateY</span><span class="s1">(</span><span class="s4">0</span><span class="s1">);</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* ================= FOOTER ================= */</span>
+
+    <span class="s0">footer </span><span class="s1">{</span>
+        <span class="s2">text-align</span><span class="s1">: </span><span class="s3">center</span><span class="s1">;</span>
+
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#475569</span><span class="s1">;</span>
+
+        <span class="s2">margin-top</span><span class="s1">: </span><span class="s4">32</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">font-size</span><span class="s1">: </span><span class="s4">13</span><span class="s3">px</span><span class="s1">;</span>
+
+        <span class="s2">line-height</span><span class="s1">: </span><span class="s4">1.8</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">footer span </span><span class="s1">{</span>
+        <span class="s2">color</span><span class="s1">: </span><span class="s5">#00e5ff</span><span class="s1">;</span>
+    <span class="s1">}</span>
+
+    <span class="s6">/* ================= MOBILE ================= */</span>
+
+    <span class="s7">@media </span><span class="s1">(</span><span class="s2">max-width</span><span class="s1">: </span><span class="s4">700</span><span class="s3">px</span><span class="s1">) {</span>
+
+        <span class="s0">nav </span><span class="s1">{</span>
+            <span class="s2">padding</span><span class="s1">: </span><span class="s4">16</span><span class="s3">px </span><span class="s4">5</span><span class="s1">%;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">logo </span><span class="s1">{</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s4">19</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">robot-icon </span><span class="s1">{</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s4">24</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">nav-text </span><span class="s1">{</span>
+            <span class="s2">display</span><span class="s1">: </span><span class="s3">none</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">container </span><span class="s1">{</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s4">94</span><span class="s1">%;</span>
+            <span class="s2">margin-top</span><span class="s1">: </span><span class="s4">35</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">hero </span><span class="s1">{</span>
+            <span class="s2">margin-bottom</span><span class="s1">: </span><span class="s4">32</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">hero-icon </span><span class="s1">{</span>
+            <span class="s2">width</span><span class="s1">: </span><span class="s4">85</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">height</span><span class="s1">: </span><span class="s4">85</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s4">45</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">24</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">hero p </span><span class="s1">{</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s4">15</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">line-height</span><span class="s1">: </span><span class="s4">1.8</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">form-card </span><span class="s1">{</span>
+            <span class="s2">padding</span><span class="s1">: </span><span class="s4">28</span><span class="s3">px </span><span class="s4">19</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">border-radius</span><span class="s1">: </span><span class="s4">23</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">form-title h2 </span><span class="s1">{</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s4">23</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">grid </span><span class="s1">{</span>
+            <span class="s2">grid-template-columns</span><span class="s1">: </span><span class="s4">1</span><span class="s3">fr</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">field</span><span class="s1">.</span><span class="s0">full </span><span class="s1">{</span>
+            <span class="s2">grid-column</span><span class="s1">: </span><span class="s3">auto</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">interests </span><span class="s1">{</span>
+            <span class="s2">grid-template-columns</span><span class="s1">: </span><span class="s4">1</span><span class="s3">fr </span><span class="s4">1</span><span class="s3">fr</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">interest label </span><span class="s1">{</span>
+            <span class="s2">padding</span><span class="s1">: </span><span class="s4">14</span><span class="s3">px </span><span class="s4">7</span><span class="s3">px</span><span class="s1">;</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s4">14</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s7">@media </span><span class="s1">(</span><span class="s2">max-width</span><span class="s1">: </span><span class="s4">420</span><span class="s3">px</span><span class="s1">) {</span>
+
+        <span class="s1">.</span><span class="s0">interests </span><span class="s1">{</span>
+            <span class="s2">grid-template-columns</span><span class="s1">: </span><span class="s4">1</span><span class="s3">fr</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">hero h1 </span><span class="s1">{</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s4">31</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.</span><span class="s0">submit-btn </span><span class="s1">{</span>
+            <span class="s2">font-size</span><span class="s1">: </span><span class="s4">16</span><span class="s3">px</span><span class="s1">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+<span class="s0">&lt;/style&gt;</span>
+<span class="s1">```</span>
+
+<span class="s0">&lt;/head&gt;</span>
+
+<span class="s0">&lt;body&gt;</span>
+
+<span class="s1">```</span>
+<span class="s6">&lt;!-- خلفية تقنية --&gt;</span>
+<span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;grid-bg&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+
+<span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;dot dot1&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+<span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;dot dot2&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+<span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;dot dot3&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+<span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;dot dot4&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+
+
+<span class="s6">&lt;!-- ================= NAVBAR ================= --&gt;</span>
+
+<span class="s0">&lt;nav&gt;</span>
+
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;logo&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;robot-icon&quot;</span><span class="s0">&gt;</span><span class="s1">🤖</span><span class="s0">&lt;/span&gt;</span>
+
+        <span class="s1">Robotics </span><span class="s0">&lt;span&gt;</span><span class="s1">Club</span><span class="s0">&lt;/span&gt;</span>
+
+    <span class="s0">&lt;/div&gt;</span>
+
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;nav-text&quot;</span><span class="s0">&gt;</span>
+        <span class="s1">ابتكر • تعلّم • اصنع المستقبل</span>
+    <span class="s0">&lt;/div&gt;</span>
+
+<span class="s0">&lt;/nav&gt;</span>
+
+
+<span class="s6">&lt;!-- ================= MAIN ================= --&gt;</span>
+
+<span class="s0">&lt;main </span><span class="s2">class</span><span class="s3">=&quot;container&quot;</span><span class="s0">&gt;</span>
+
+
+    <span class="s6">&lt;!-- ================= HERO ================= --&gt;</span>
+
+    <span class="s0">&lt;section </span><span class="s2">class</span><span class="s3">=&quot;hero&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;badge&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;badge-dot&quot;</span><span class="s0">&gt;&lt;/span&gt;</span>
+            <span class="s1">التسجيل مفتوح الآن</span>
+        <span class="s0">&lt;/div&gt;</span>
+
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;hero-icon&quot;</span><span class="s0">&gt;</span>
+            <span class="s1">🤖</span>
+        <span class="s0">&lt;/div&gt;</span>
+
+        <span class="s0">&lt;h1&gt;</span>
+            <span class="s1">انضم إلى</span>
+            <span class="s0">&lt;span&gt;</span><span class="s1">نادي الروبوتيك</span><span class="s0">&lt;/span&gt;</span>
+        <span class="s0">&lt;/h1&gt;</span>
+
+        <span class="s0">&lt;p&gt;</span>
+            <span class="s1">مساحة تجمع المبرمجين والمبتكرين وعشاق التكنولوجيا</span>
+            <span class="s1">لبناء مشاريع روبوتية، تعلم البرمجة، تجربة الذكاء الاصطناعي</span>
+            <span class="s1">والعمل على أفكار جديدة مع فريق من المهتمين بالتقنية.</span>
+        <span class="s0">&lt;/p&gt;</span>
+
+    <span class="s0">&lt;/section&gt;</span>
+
+
+    <span class="s6">&lt;!-- ================= FORM ================= --&gt;</span>
+
+    <span class="s0">&lt;form</span>
+        <span class="s2">class</span><span class="s3">=&quot;form-card&quot;</span>
+        <span class="s2">id</span><span class="s3">=&quot;clubForm&quot;</span>
+        <span class="s2">action</span><span class="s3">=&quot;https://formsubmit.co/zhhzh730@gmail.com&quot;</span>
+        <span class="s2">method</span><span class="s3">=&quot;POST&quot;</span>
+    <span class="s0">&gt;</span>
+
+        <span class="s6">&lt;!-- إعدادات FormSubmit --&gt;</span>
+
+        <span class="s0">&lt;input</span>
+            <span class="s2">type</span><span class="s3">=&quot;hidden&quot;</span>
+            <span class="s2">name</span><span class="s3">=&quot;_subject&quot;</span>
+            <span class="s2">value</span><span class="s3">=&quot;🤖 تسجيل جديد في نادي الروبوتيك&quot;</span>
+        <span class="s0">&gt;</span>
+
+        <span class="s0">&lt;input</span>
+            <span class="s2">type</span><span class="s3">=&quot;hidden&quot;</span>
+            <span class="s2">name</span><span class="s3">=&quot;_template&quot;</span>
+            <span class="s2">value</span><span class="s3">=&quot;table&quot;</span>
+        <span class="s0">&gt;</span>
+
+        <span class="s0">&lt;input</span>
+            <span class="s2">type</span><span class="s3">=&quot;hidden&quot;</span>
+            <span class="s2">name</span><span class="s3">=&quot;_captcha&quot;</span>
+            <span class="s2">value</span><span class="s3">=&quot;false&quot;</span>
+        <span class="s0">&gt;</span>
+
+        <span class="s0">&lt;input</span>
+            <span class="s2">type</span><span class="s3">=&quot;hidden&quot;</span>
+            <span class="s2">name</span><span class="s3">=&quot;_next&quot;</span>
+            <span class="s2">value</span><span class="s3">=&quot;https://example.com&quot;</span>
+        <span class="s0">&gt;</span>
+
+
+        <span class="s6">&lt;!-- عنوان الاستمارة --&gt;</span>
+
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;form-title&quot;</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;h2&gt;</span>
+                <span class="s1">🚀 استمارة الانضمام</span>
+            <span class="s0">&lt;/h2&gt;</span>
+
+            <span class="s0">&lt;p&gt;</span>
+                <span class="s1">املأ المعلومات التالية للانضمام إلى نادي الروبوتيك.</span>
+            <span class="s0">&lt;/p&gt;</span>
+
+        <span class="s0">&lt;/div&gt;</span>
+
+
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;grid&quot;</span><span class="s0">&gt;</span>
+
+
+            <span class="s6">&lt;!-- الاسم --&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;field&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;label&gt;</span>
+                    <span class="s1">الاسم الكامل </span><span class="s0">&lt;span&gt;</span><span class="s1">*</span><span class="s0">&lt;/span&gt;</span>
+                <span class="s0">&lt;/label&gt;</span>
+
+                <span class="s0">&lt;input</span>
+                    <span class="s2">type</span><span class="s3">=&quot;text&quot;</span>
+                    <span class="s2">name</span><span class="s3">=&quot;الاسم_الكامل&quot;</span>
+                    <span class="s2">placeholder</span><span class="s3">=&quot;مثال: محمد أمين&quot;</span>
+                    <span class="s2">autocomplete</span><span class="s3">=&quot;name&quot;</span>
+                    <span class="s2">required</span>
+                <span class="s0">&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+
+            <span class="s6">&lt;!-- الهاتف --&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;field&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;label&gt;</span>
+                    <span class="s1">رقم الهاتف </span><span class="s0">&lt;span&gt;</span><span class="s1">*</span><span class="s0">&lt;/span&gt;</span>
+                <span class="s0">&lt;/label&gt;</span>
+
+                <span class="s0">&lt;input</span>
+                    <span class="s2">type</span><span class="s3">=&quot;tel&quot;</span>
+                    <span class="s2">name</span><span class="s3">=&quot;رقم_الهاتف&quot;</span>
+                    <span class="s2">placeholder</span><span class="s3">=&quot;06XXXXXXXX&quot;</span>
+                    <span class="s2">autocomplete</span><span class="s3">=&quot;tel&quot;</span>
+                    <span class="s2">required</span>
+                <span class="s0">&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+
+            <span class="s6">&lt;!-- البريد --&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;field&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;label&gt;</span>
+                    <span class="s1">البريد الإلكتروني </span><span class="s0">&lt;span&gt;</span><span class="s1">*</span><span class="s0">&lt;/span&gt;</span>
+                <span class="s0">&lt;/label&gt;</span>
+
+                <span class="s0">&lt;input</span>
+                    <span class="s2">type</span><span class="s3">=&quot;email&quot;</span>
+                    <span class="s2">name</span><span class="s3">=&quot;البريد_الإلكتروني&quot;</span>
+                    <span class="s2">placeholder</span><span class="s3">=&quot;example@email.com&quot;</span>
+                    <span class="s2">autocomplete</span><span class="s3">=&quot;email&quot;</span>
+                    <span class="s2">required</span>
+                <span class="s0">&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+
+            <span class="s6">&lt;!-- التخصص --&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;field&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;label&gt;</span>
+                    <span class="s1">التخصص </span><span class="s0">&lt;span&gt;</span><span class="s1">*</span><span class="s0">&lt;/span&gt;</span>
+                <span class="s0">&lt;/label&gt;</span>
+
+                <span class="s0">&lt;select </span><span class="s2">name</span><span class="s3">=&quot;التخصص&quot; </span><span class="s2">required</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">اختر تخصصك</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;البرمجة&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">البرمجة</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;الروبوتيك&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">الروبوتيك</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;الذكاء الاصطناعي&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">الذكاء الاصطناعي</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;الإلكترونيات&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">الإلكترونيات</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;الميكاترونيك&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">هندسة الميكاترونيك</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;التصميم&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">التصميم ثلاثي الأبعاد</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;طالب&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">طالب</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;آخر&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">تخصص آخر</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                <span class="s0">&lt;/select&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+
+            <span class="s6">&lt;!-- المستوى --&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;field&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;label&gt;</span>
+                    <span class="s1">المستوى الدراسي</span>
+                <span class="s0">&lt;/label&gt;</span>
+
+                <span class="s0">&lt;select </span><span class="s2">name</span><span class="s3">=&quot;المستوى_الدراسي&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">اختر المستوى</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;إعدادي&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">إعدادي</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;ثانوي&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">ثانوي</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;جامعي&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">جامعي</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;طالب هندسة&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">طالب هندسة</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;خريج&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">خريج</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                    <span class="s0">&lt;option </span><span class="s2">value</span><span class="s3">=&quot;آخر&quot;</span><span class="s0">&gt;</span>
+                        <span class="s1">آخر</span>
+                    <span class="s0">&lt;/option&gt;</span>
+
+                <span class="s0">&lt;/select&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+
+            <span class="s6">&lt;!-- المدينة --&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;field&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;label&gt;</span>
+                    <span class="s1">المدينة</span>
+                <span class="s0">&lt;/label&gt;</span>
+
+                <span class="s0">&lt;input</span>
+                    <span class="s2">type</span><span class="s3">=&quot;text&quot;</span>
+                    <span class="s2">name</span><span class="s3">=&quot;المدينة&quot;</span>
+                    <span class="s2">placeholder</span><span class="s3">=&quot;مدينتك&quot;</span>
+                    <span class="s2">autocomplete</span><span class="s3">=&quot;address-level2&quot;</span>
+                <span class="s0">&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+
+            <span class="s6">&lt;!-- ================= الاهتمامات ================= --&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;field full&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;label&gt;</span>
+                    <span class="s1">المجالات التي تهتم بها</span>
+                <span class="s0">&lt;/label&gt;</span>
+
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;interests&quot;</span><span class="s0">&gt;</span>
+
+
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;interest&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;input</span>
+                            <span class="s2">type</span><span class="s3">=&quot;checkbox&quot;</span>
+                            <span class="s2">id</span><span class="s3">=&quot;programming&quot;</span>
+                            <span class="s2">name</span><span class="s3">=&quot;اهتمام_البرمجة&quot;</span>
+                            <span class="s2">value</span><span class="s3">=&quot;البرمجة&quot;</span>
+                        <span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;programming&quot;</span><span class="s0">&gt;</span>
+                            <span class="s1">💻 البرمجة</span>
+                        <span class="s0">&lt;/label&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+
+
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;interest&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;input</span>
+                            <span class="s2">type</span><span class="s3">=&quot;checkbox&quot;</span>
+                            <span class="s2">id</span><span class="s3">=&quot;robot&quot;</span>
+                            <span class="s2">name</span><span class="s3">=&quot;اهتمام_الروبوت&quot;</span>
+                            <span class="s2">value</span><span class="s3">=&quot;الروبوتيك&quot;</span>
+                        <span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;robot&quot;</span><span class="s0">&gt;</span>
+                            <span class="s1">🤖 الروبوتيك</span>
+                        <span class="s0">&lt;/label&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+
+
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;interest&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;input</span>
+                            <span class="s2">type</span><span class="s3">=&quot;checkbox&quot;</span>
+                            <span class="s2">id</span><span class="s3">=&quot;ai&quot;</span>
+                            <span class="s2">name</span><span class="s3">=&quot;اهتمام_AI&quot;</span>
+                            <span class="s2">value</span><span class="s3">=&quot;الذكاء الاصطناعي&quot;</span>
+                        <span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;ai&quot;</span><span class="s0">&gt;</span>
+                            <span class="s1">🧠 الذكاء الاصطناعي</span>
+                        <span class="s0">&lt;/label&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+
+
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;interest&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;input</span>
+                            <span class="s2">type</span><span class="s3">=&quot;checkbox&quot;</span>
+                            <span class="s2">id</span><span class="s3">=&quot;electronics&quot;</span>
+                            <span class="s2">name</span><span class="s3">=&quot;اهتمام_الإلكترونيات&quot;</span>
+                            <span class="s2">value</span><span class="s3">=&quot;الإلكترونيات&quot;</span>
+                        <span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;electronics&quot;</span><span class="s0">&gt;</span>
+                            <span class="s1">⚡ الإلكترونيات</span>
+                        <span class="s0">&lt;/label&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+
+
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;interest&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;input</span>
+                            <span class="s2">type</span><span class="s3">=&quot;checkbox&quot;</span>
+                            <span class="s2">id</span><span class="s3">=&quot;design&quot;</span>
+                            <span class="s2">name</span><span class="s3">=&quot;اهتمام_التصميم&quot;</span>
+                            <span class="s2">value</span><span class="s3">=&quot;التصميم&quot;</span>
+                        <span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;design&quot;</span><span class="s0">&gt;</span>
+                            <span class="s1">🎨 التصميم</span>
+                        <span class="s0">&lt;/label&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+
+
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;interest&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;input</span>
+                            <span class="s2">type</span><span class="s3">=&quot;checkbox&quot;</span>
+                            <span class="s2">id</span><span class="s3">=&quot;threeD&quot;</span>
+                            <span class="s2">name</span><span class="s3">=&quot;اهتمام_3D&quot;</span>
+                            <span class="s2">value</span><span class="s3">=&quot;3D&quot;</span>
+                        <span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;label </span><span class="s2">for</span><span class="s3">=&quot;threeD&quot;</span><span class="s0">&gt;</span>
+                            <span class="s1">🧊 3D</span>
+                        <span class="s0">&lt;/label&gt;</span>
+
+                    <span class="s0">&lt;/div&gt;</span>
+
+
+                <span class="s0">&lt;/div&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+
+            <span class="s6">&lt;!-- ================= سبب الانضمام ================= --&gt;</span>
+
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;field full&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;label&gt;</span>
+                    <span class="s1">لماذا تريد الانضمام إلى النادي؟</span>
+                <span class="s0">&lt;/label&gt;</span>
+
+                <span class="s0">&lt;textarea</span>
+                    <span class="s2">name</span><span class="s3">=&quot;سبب_الانضمام&quot;</span>
+                    <span class="s2">placeholder</span><span class="s3">=&quot;اكتب لنا فكرتك أو ما تريد تعلمه...&quot;</span>
+                <span class="s0">&gt;&lt;/textarea&gt;</span>
+
+            <span class="s0">&lt;/div&gt;</span>
+
+
+        <span class="s0">&lt;/div&gt;</span>
+
+
+        <span class="s6">&lt;!-- ================= الموافقة ================= --&gt;</span>
+
+        <span class="s0">&lt;label </span><span class="s2">class</span><span class="s3">=&quot;agree&quot;</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;input</span>
+                <span class="s2">type</span><span class="s3">=&quot;checkbox&quot;</span>
+                <span class="s2">name</span><span class="s3">=&quot;الموافقة&quot;</span>
+                <span class="s2">value</span><span class="s3">=&quot;موافق&quot;</span>
+                <span class="s2">required</span>
+            <span class="s0">&gt;</span>
+
+            <span class="s0">&lt;span&gt;</span>
+                <span class="s1">أوافق على إرسال المعلومات التي أدخلتها</span>
+                <span class="s1">من أجل التسجيل في نادي الروبوتيك.</span>
+            <span class="s0">&lt;/span&gt;</span>
+
+        <span class="s0">&lt;/label&gt;</span>
+
+
+        <span class="s6">&lt;!-- ================= BUTTON ================= --&gt;</span>
+
+        <span class="s0">&lt;button</span>
+            <span class="s2">type</span><span class="s3">=&quot;submit&quot;</span>
+            <span class="s2">class</span><span class="s3">=&quot;submit-btn&quot;</span>
+        <span class="s0">&gt;</span>
+            <span class="s1">🤖 إرسال طلب الانضمام</span>
+        <span class="s0">&lt;/button&gt;</span>
+
+
+        <span class="s6">&lt;!-- رسالة نجاح --&gt;</span>
+
+        <span class="s0">&lt;div</span>
+            <span class="s2">class</span><span class="s3">=&quot;success-message&quot;</span>
+            <span class="s2">id</span><span class="s3">=&quot;successMessage&quot;</span>
+        <span class="s0">&gt;</span>
+            <span class="s1">✅ تم إرسال طلبك بنجاح!</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s1">شكرًا لانضمامك إلى نادي الروبوتيك 🚀</span>
+        <span class="s0">&lt;/div&gt;</span>
+
+    <span class="s0">&lt;/form&gt;</span>
+
+
+    <span class="s6">&lt;!-- ================= FOOTER ================= --&gt;</span>
+
+    <span class="s0">&lt;footer&gt;</span>
+
+        <span class="s1">© 2026 </span><span class="s0">&lt;span&gt;</span><span class="s1">Robotics Club</span><span class="s0">&lt;/span&gt;</span>
+
+        <span class="s1">— اصنع المستقبل بيديك 🚀</span>
+
+    <span class="s0">&lt;/footer&gt;</span>
+
+<span class="s0">&lt;/main&gt;</span>
+
+
+<span class="s6">&lt;!-- ================= JAVASCRIPT ================= --&gt;</span>
+
+<span class="s0">&lt;script&gt;</span>
+
+    <span class="s7">const </span><span class="s1">form = document.getElementById(</span><span class="s3">&quot;clubForm&quot;</span><span class="s1">);</span>
+    <span class="s7">const </span><span class="s1">successMessage = document.getElementById(</span><span class="s3">&quot;successMessage&quot;</span><span class="s1">);</span>
+
+    <span class="s1">form.addEventListener(</span><span class="s3">&quot;submit&quot;</span><span class="s1">, </span><span class="s7">function </span><span class="s1">() {</span>
+
+        <span class="s7">const </span><span class="s1">button = form.querySelector(</span><span class="s3">&quot;.submit-btn&quot;</span><span class="s1">);</span>
+
+        <span class="s1">button.innerHTML = </span><span class="s3">&quot;⏳ جارٍ إرسال الطلب...&quot;</span><span class="s1">;</span>
+        <span class="s1">button.style.pointerEvents = </span><span class="s3">&quot;none&quot;</span><span class="s1">;</span>
+
+        <span class="s6">/* 
+         * نترك النموذج يرسل بياناته إلى FormSubmit. 
+         * الرسالة ستظهر إذا كان الإرسال داخل الصفحة 
+         * متاحًا في المتصفح. 
+         */</span>
+
+    <span class="s1">});</span>
+
+<span class="s0">&lt;/script&gt;</span>
+<span class="s1">```</span>
+
+<span class="s0">&lt;/body&gt;</span>
+
+<span class="s0">&lt;/html&gt;</span>
+</pre>
+</body>
+</html>
